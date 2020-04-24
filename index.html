@@ -4,25 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Document</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Fluid jumbotron</h1>
-                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
-                </p>
-            </div>
+        <div class="jumbotron"> 
+            <br>
         </div>
+        <div class="title text-center fluid">
+            <h1>HANG MAN</h1>
+        </div>
+
         <div class="row">
             <div class="card col-sm-12">
-                <div class="card-header text-center">Guess The Word</div>
-                <div class="card-body text-center" id="answer">
-                    This is some text within a card body.
+                <div class="card-header text-center"><h3>Guess The Word</h3></div>
+                <div class="card-body text-center">
+                    <h2 id="answer"></h2>
+              
                 </div>
             </div>
         </div>
@@ -30,31 +34,45 @@
         <div class="row">
             <div class="card col-sm-3">
                 <div class="card-header text-center">
-                    WINS
+                    <h3>WINS</h3>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-center">Cras justo odio</li>
+                    <li class="list-group-item text-center">
+                        <h4 id="wins"></h4>
+                    </li>
                 </ul>
             </div>
-            <div class="card col-sm-6">
+            <div class="col-sm-1"></div>
+            <div class="card col-sm-4">
                 <div class="card-header text-center">
-                    LETTERS GUESSED
+                    <h3>GUESSES</h3>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-center">Cras justo odio</li>
+                    <li class="list-group-item text-center guessesLeft">Guesses Left:<br>
+                        <h4 id="guessesLeft"></h4>
+                    </li>
+                    <li class="list-group-item text-center lettersGuessed">Letters Guessed: <br>
+                        <h4 id="lettersGuessed">
+                    </h4>
+                    </li>
                 </ul>
             </div>
+            <div class="col-sm-1"></div>
             <div class="card col-sm-3">
                 <div class="card-header text-center">
-                    LOSSES
+                    <h3>LOSSES</h3>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item text-center">Cras justo odio</li>
+                    <li class="list-group-item text-center">
+                        <h4 id="losses"></h4>
+                    </li>
                 </ul>
             </div>
 
         </div>
     </div>
+    </div>
+    <script src="javascript/logic.js"></script>
 </body>
 
 </html>

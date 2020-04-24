@@ -1,0 +1,36 @@
+.jumbotron{
+    background-image: url("../../assets/images/marvel.png");
+    background-size: 100% 100%;
+   
+}
+h1{
+    color: rgb(255, 255, 255);
+    font-family: 'Anton', sans-serif;
+    font-size: 94px;
+    letter-spacing: 12px;
+  
+    text-shadow:
+    -4px -3px 0 #e70000,  
+    4px -3px 0 #e70000,
+    -4px 3px 0 #e70000,
+    4px 3px 0 #e70000;
+}
+
+.card-header{
+    background-color: #e70000;
+
+}
+body{
+    background-color: black;
+}
+
+h4{
+    color: rgb(255, 255, 255);
+    font-family: 'Anton', sans-serif;
+    font-size: 40px;
+    text-shadow:
+    -4px -3px 0 #e70000,  
+    4px -3px 0 #e70000,
+    -4px 3px 0 #e70000,
+    4px 3px 0 #e70000;
+}
